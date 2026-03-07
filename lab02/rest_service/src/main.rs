@@ -12,7 +12,6 @@ use axum::{
     routing::{delete, get, post, put},
 };
 
-use env_logger::Env;
 use log::error;
 use serde::{Deserialize, Serialize};
 
@@ -209,7 +208,6 @@ async fn get_image(State(state): State<AppState>, Path(id): Path<u32>) -> impl I
 
 #[tokio::main]
 async fn main() {
-    env_logger::init_from_env(Env::default().default_filter_or("info"));
     let state = AppState {
         products: Arc::new(Mutex::new(HashMap::new())),
         next_id: Arc::new(Mutex::new(1)),
