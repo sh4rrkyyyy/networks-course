@@ -56,13 +56,25 @@
 
 Вы можете положить код сервиса в отдельную директорию рядом с этим документом.
 
+**Запуск: ```cd rest_service/ && cargo run``` **
+
 ### Задание Б (3 балла)
 Продемонстрируйте работоспособность сервиса с помощью программы Postman
 (https://www.postman.com/downloads) и приложите соответствующие скрины, на которых указаны
 запросы и ответы со стороны сервиса для **всех** его операций.
 
 #### Демонстрация работы
-todo
+![err](images/post.png)
+![err](images/get.png)
+![err](images/put1.png)
+![err](images/put2.png)
+![err](images/put3.png)
+![err](images/delete.png)
+![err](images/empty_products.png)
+![err](images/post2.png)
+![err](images/post3.png)
+![err](images/products.png)
+![err](images/get404.png)
 
 ### Задание В (4 балла)
 Пусть ваш продукт также имеет иконку (небольшую картинку). Формат иконки (картинки) может
@@ -84,7 +96,9 @@ todo
 ```
 
 #### Демонстрация работы
-todo
+![err](images/post4.png)
+![err](images/post5.png)
+![err](images/get_image.png)
 
 ---
 
