@@ -14,7 +14,21 @@
 Приложите скриншоты полученных сообщений (для обоих форматов).
 
 #### Демонстрация работы
-todo
+Запуск:
+```
+cargo run -- \
+--to <TO_EMAIL> \  
+--from <FROM_EMAIL> \
+--subject <SUBJECT_TEXT> \ 
+--body <MESSAGE_TEXT> \
+--fmt <html | txt> \
+--host <HOST_NAME> \
+--port <PORT> \  
+--username <USERNAME> \  
+--password <PASSWORD>
+```
+![err](images/txt_msg.png)
+![err](images/html_msg.png)
 
 ### 2. SMTP-клиент (3 балла)
 Разработайте простой почтовый клиент, который отправляет текстовые сообщения
@@ -27,7 +41,21 @@ todo
 Сделайте скриншоты полученных сообщений.
 
 #### Демонстрация работы
-todo
+Запуск:
+```
+cargo run -- \
+--to <TO_EMAIL> \  
+--from <FROM_EMAIL> \
+--subject <SUBJECT_TEXT> \ 
+--body <MESSAGE_TEXT> \
+--fmt <html | txt> \
+--host <HOST_NAME> \
+--port <PORT> \  
+--username <USERNAME> \  
+--password <PASSWORD>
+```
+![err](images/txt_msg2.png)
+![err](images/html_msg2.png)
 
 ### 3. SMTP-клиент: бинарные данные (2 балла)
 Модифицируйте ваш SMTP-клиент из предыдущего задания так, чтобы теперь он мог
@@ -36,7 +64,21 @@ todo
 Сделайте скриншот, подтверждающий получение почтового сообщения с картинкой.
 
 #### Демонстрация работы
-todo
+Запуск:
+```
+cargo run -- \
+--to <TO_EMAIL> \  
+--from <FROM_EMAIL> \
+--subject <SUBJECT_TEXT> \ 
+--body <MESSAGE_TEXT> \
+--fmt <html | txt> \
+--host <HOST_NAME> \
+--port <PORT> \  
+--username <USERNAME> \  
+--password <PASSWORD> \
+--image <IMAGE>
+```
+![err](images/image.png)
 
 ---
 
@@ -56,7 +98,7 @@ Paint (на стороне сервера). Или запустить консо
 сервере) отправляется обратно клиенту.
 
 #### Демонстрация работы
-todo
+![err](images/client.png)
 
 ### В. Широковещательная рассылка через UDP (2 балла)
 Реализуйте сервер (веб-службу) и клиента с использованием интерфейса Socket API, которая:
