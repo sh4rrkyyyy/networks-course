@@ -28,6 +28,8 @@ Final state of router 198.71.243.61 table:
 
 #### Демонстрация работы
 ![err](images/task1cfg.png)
+
+
 ![err](images/task1gen.png)
 
 ### Задание Б (1 балл)
